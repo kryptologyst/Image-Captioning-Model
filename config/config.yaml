@@ -1,0 +1,32 @@
+# Model Configuration
+model:
+  model_name: "Salesforce/blip-image-captioning-base"
+  device: null  # null for auto-detection
+  use_pipeline: true
+  max_length: 50
+  num_beams: 4
+  temperature: 1.0
+  do_sample: false
+
+# Application Configuration
+app:
+  debug: false
+  log_level: "INFO"
+  data_dir: "data"
+  models_dir: "models"
+  output_dir: "output"
+
+# Web Interface Configuration
+web:
+  host: "localhost"
+  port: 8501
+  theme: "light"
+  sidebar_state: "expanded"
+
+# Generation Parameters
+generation:
+  default_max_length: 50
+  default_num_beams: 4
+  default_temperature: 1.0
+  default_do_sample: false
+  max_images_per_batch: 10
